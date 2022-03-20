@@ -734,7 +734,7 @@ class RichMarkdownEditor extends React.PureComponent<Props, State> {
     const {
       dir,
       readOnly,
-      showToolbar,
+      showToolbar = true,
       readOnlyWriteCheckboxes,
       style,
       tooltip,
