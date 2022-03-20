@@ -10,6 +10,7 @@ export default {
   argTypes: {
     value: { control: "text" },
     readOnly: { control: "boolean" },
+    showToolbar: { control: "boolean" },
     onSave: { action: "save" },
     onCancel: { action: "cancel" },
     onClickHashtag: { action: "hashtag clicked" },

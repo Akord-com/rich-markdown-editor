@@ -8,7 +8,7 @@ import {
   PlusIcon,
   TrashIcon,
   OpenIcon,
-} from "outline-icons";
+} from "@akord/outline-icons";
 import styled, { withTheme } from "styled-components";
 import isUrl from "../lib/isUrl";
 import theme from "../styles/theme";

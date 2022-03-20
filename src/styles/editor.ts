@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const StyledEditor = styled("div")<{
-  rtl: boolean;
-  readOnly?: boolean;
-  readOnlyWriteCheckboxes?: boolean;
+  rtl: boolean
+  readOnly?: boolean
+  readOnlyWriteCheckboxes?: boolean
 }>`
   color: ${props => props.theme.text};
   background: ${props => props.theme.background};
@@ -128,9 +128,9 @@ export const StyledEditor = styled("div")<{
   h4,
   h5,
   h6 {
-    margin: 1em 0 0.5em;
-    font-weight: 500;
+    margin: 0;
     cursor: text;
+    font-family: ${props => props.theme.fontFamilyHeading};
 
     &:not(.placeholder):before {
       display: ${props => (props.readOnly ? "none" : "inline-block")};
@@ -1014,4 +1014,4 @@ export const StyledEditor = styled("div")<{
       font-family: "SF Pro Text", ${props => props.theme.fontFamily};
     }
   }
-`;
+`

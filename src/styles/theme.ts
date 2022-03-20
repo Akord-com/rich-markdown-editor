@@ -62,6 +62,9 @@ export const base = {
   noticeTipText: colors.white,
   noticeWarningBackground: "#FF5C80",
   noticeWarningText: colors.white,
+
+  fontFamilyHeading:
+    "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen, Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif",
 };
 
 export const light = {

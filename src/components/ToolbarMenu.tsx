@@ -27,9 +27,9 @@ class ToolbarMenu extends React.Component<Props> {
     return (
       <FlexibleWrapper>
         {items.map((item, index) => {
-          if (item.name === "separator" && item.visible !== false) {
-            return <ToolbarSeparator key={index} />;
-          }
+          // if (item.name === "separator" && item.visible !== false) {
+          //   return <ToolbarSeparator key={index} />;
+          // }
           if (item.visible === false || !item.icon) {
             return null;
           }

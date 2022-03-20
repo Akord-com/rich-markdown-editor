@@ -122,6 +122,7 @@ export type Props = {
   )[];
   autoFocus?: boolean;
   readOnly?: boolean;
+  showToolbar?: boolean;
   readOnlyWriteCheckboxes?: boolean;
   dictionary?: Partial<typeof baseDictionary>;
   dark?: boolean;
@@ -733,6 +734,7 @@ class RichMarkdownEditor extends React.PureComponent<Props, State> {
     const {
       dir,
       readOnly,
+      showToolbar,
       readOnlyWriteCheckboxes,
       style,
       tooltip,
@@ -763,19 +765,19 @@ class RichMarkdownEditor extends React.PureComponent<Props, State> {
             />
             {!readOnly && this.view && (
               <React.Fragment>
-                <SelectionToolbar
+                {showToolbar && <SelectionToolbar
                   view={this.view}
                   dictionary={dictionary}
                   commands={this.commands}
                   rtl={isRTL}
                   isTemplate={this.props.template === true}
-                  onOpen={this.handleOpenSelectionMenu}
+                    onOpen={this.handleOpenSelectionMenu}
                   onClose={this.handleCloseSelectionMenu}
                   onSearchLink={this.props.onSearchLink}
                   onClickLink={this.props.onClickLink}
                   onCreateLink={this.props.onCreateLink}
                   tooltip={tooltip}
-                />
+                />}
                 <LinkToolbar
                   view={this.view}
                   dictionary={dictionary}

@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@akord/outline-icons@^1.40.0":
+  version "1.40.0"
+  resolved "https://registry.yarnpkg.com/@akord/outline-icons/-/outline-icons-1.40.0.tgz#c685328cecc7a957530d4607b4d3d5796d9885ac"
+  integrity sha512-uG2B8f/SBE+EBl8VTP0NAE34ObSCJl5WUMjjpJaSu/2238XURbkZn4Xhknr50S9jO8FjboaRbHF0KpvVku9z4w==
+
 "@babel/code-frame@7.10.4":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.10.4.tgz#168da1a36e90da68ae8d49c0f1b48c7c6249213a"
@@ -8605,11 +8610,6 @@ os-browserify@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/os-browserify/-/os-browserify-0.3.0.tgz#854373c7f5c2315914fc9bfc6bd8238fdda1ec27"
   integrity sha1-hUNzx/XCMVkU/Jv8a9gjj92h7Cc=
-
-outline-icons@^1.38.1:
-  version "1.38.1"
-  resolved "https://registry.yarnpkg.com/outline-icons/-/outline-icons-1.38.1.tgz#2f72e360549cb3dda5b3e7c17feaccaab1617da0"
-  integrity sha512-Lkdn8jvh3/hoS298hAdVgNZMxtDlx1zUJRFU4teESL7cyodFpFaG7WUBs6ZM+11j8uMisp/8PyPrZ5IPJwmrcg==
 
 overlayscrollbars@^1.13.1:
   version "1.13.1"
