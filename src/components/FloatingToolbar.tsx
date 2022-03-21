@@ -188,7 +188,7 @@ const Wrapper = styled.div<{
   z-index: ${props => props.theme.zIndex + 100};
   opacity: 0;
   background-color: ${props => props.theme.toolbarBackground};
-  border-radius: 4px;
+  border-radius: 8px;
   transform: scale(0.95);
   transition: opacity 150ms cubic-bezier(0.175, 0.885, 0.32, 1.275),
     transform 150ms cubic-bezier(0.175, 0.885, 0.32, 1.275);

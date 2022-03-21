@@ -2,7 +2,7 @@ import * as React from "react";
 import { EditorView } from "prosemirror-view";
 import styled, { withTheme } from "styled-components";
 import ToolbarButton from "./ToolbarButton";
-import ToolbarSeparator from "./ToolbarSeparator";
+// import ToolbarSeparator from "./ToolbarSeparator";
 import theme from "../styles/theme";
 import { MenuItem } from "../types";
 
@@ -43,6 +43,7 @@ class ToolbarMenu extends React.Component<Props> {
                 item.name && this.props.commands[item.name](item.attrs)
               }
               active={isActive}
+              toolbarHoverBackground={this.props.theme.toolbarHoverBackground}
             >
               <Tooltip tooltip={item.tooltip} placement="top">
                 <Icon color={this.props.theme.toolbarItem} />

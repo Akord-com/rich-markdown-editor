@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-type Props = { active?: boolean; disabled?: boolean };
+type Props = { active?: boolean; disabled?: boolean; toolbarHoverBackground?: string };
 
 export default styled.button<Props>`
   display: inline-block;
@@ -13,7 +13,6 @@ export default styled.button<Props>`
   background: none;
   transition: opacity 100ms ease-in-out;
   padding: 0;
-  opacity: 0.7;
   outline: none;
   pointer-events: all;
   position: relative;
@@ -23,7 +22,8 @@ export default styled.button<Props>`
   }
 
   &:hover {
-    opacity: 1;
+    background-color: ${props => props.toolbarHoverBackground};
+    border-radius: 4px;
   }
 
   &:disabled {
@@ -40,5 +40,5 @@ export default styled.button<Props>`
     bottom: -4px;
   }
 
-  ${props => props.active && "opacity: 1;"};
+  ${props => props.active && `background-color: ${props.toolbarHoverBackground}; border-radius: 4px;`};
 `;
