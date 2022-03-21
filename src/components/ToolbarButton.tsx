@@ -23,7 +23,7 @@ export default styled.button<Props>`
 
   &:hover {
     background-color: ${props => props.toolbarHoverBackground};
-    border-radius: 4px;
+    border-radius: 3px;
   }
 
   &:disabled {
@@ -40,5 +40,5 @@ export default styled.button<Props>`
     bottom: -4px;
   }
 
-  ${props => props.active && `background-color: ${props.toolbarHoverBackground}; border-radius: 4px;`};
+  ${props => props.active && `background-color: ${props.toolbarHoverBackground}; border-radius: 3px;`};
 `;

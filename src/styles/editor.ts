@@ -122,22 +122,8 @@ export const StyledEditor = styled("div")<{
     }
   }
 
-  h1 {
-    font-size: 30px;
-    line-height: 1.2,
-    margin: 0;
-    cursor: text;
-    font-family: ${props => props.theme.fontFamilyHeading};
-  }
-
-  h2 {
-    font-size: 24px;
-    line-height: 1.25,
-    margin: 0;
-    cursor: text;
-    font-family: ${props => props.theme.fontFamilyHeading};
-  }
-
+  h1,
+  h2,
   h3,
   h4,
   h5,
