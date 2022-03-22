@@ -5,14 +5,14 @@ type Props = { active?: boolean; disabled?: boolean; toolbarHoverBackground?: st
 export default styled.button<Props>`
   display: inline-block;
   flex: 0;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
+  padding: 0 4px;
   cursor: pointer;
   margin-left: 8px;
   border: none;
   background: none;
   transition: opacity 100ms ease-in-out;
-  padding: 0;
   outline: none;
   pointer-events: all;
   position: relative;
@@ -26,11 +26,6 @@ export default styled.button<Props>`
     border-radius: 3px;
   }
 
-  &:disabled {
-    opacity: 0.3;
-    cursor: default;
-  }
-
   &:before {
     position: absolute;
     content: "";
@@ -40,5 +35,12 @@ export default styled.button<Props>`
     bottom: -4px;
   }
 
+  &:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  
   ${props => props.active && `background-color: ${props.toolbarHoverBackground}; border-radius: 3px;`};
-`;
+  `;
+  

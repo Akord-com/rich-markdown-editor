@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const StyledEditor = styled("div")<{
+export const StyledEditor = styled("div") <{
   rtl: boolean
   readOnly?: boolean
   readOnlyWriteCheckboxes?: boolean
@@ -205,7 +205,7 @@ export const StyledEditor = styled("div")<{
     h5,
     h6 {
       &:not(.placeholder):before {
-        opacity: 1;
+        opacity: 0;
       }
     }
   }
@@ -391,7 +391,7 @@ export const StyledEditor = styled("div")<{
     &:hover {
       border-bottom: 1px dotted
         ${props =>
-          props.readOnly ? props.theme.placeholder : props.theme.textSecondary};
+    props.readOnly ? props.theme.placeholder : props.theme.textSecondary};
     }
   }
 
@@ -498,9 +498,9 @@ export const StyledEditor = styled("div")<{
   ul.checkbox_list li input {
     cursor: pointer;
     pointer-events: ${props =>
-      props.readOnly && !props.readOnlyWriteCheckboxes ? "none" : "initial"};
+    props.readOnly && !props.readOnlyWriteCheckboxes ? "none" : "initial"};
     opacity: ${props =>
-      props.readOnly && !props.readOnlyWriteCheckboxes ? 0.75 : 1};
+    props.readOnly && !props.readOnlyWriteCheckboxes ? 0.75 : 1};
     margin: ${props => (props.rtl ? "0.5em 0 0 0.5em" : "0.5em 0.5em 0 0")};
     width: 14px;
     height: 14px;
@@ -772,7 +772,7 @@ export const StyledEditor = styled("div")<{
 
     .selectedCell {
       background: ${props =>
-        props.readOnly ? "inherit" : props.theme.tableSelectedBackground};
+    props.readOnly ? "inherit" : props.theme.tableSelectedBackground};
 
       /* fixes Firefox background color painting over border:
        * https://bugzilla.mozilla.org/show_bug.cgi?id=688556 */
@@ -872,7 +872,7 @@ export const StyledEditor = styled("div")<{
 
     &:hover {
       scrollbar-color: ${props => props.theme.scrollbarThumb} ${props =>
-  props.theme.scrollbarBackground};
+    props.theme.scrollbarBackground};
     }
 
     & ::-webkit-scrollbar {

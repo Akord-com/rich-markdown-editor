@@ -183,7 +183,7 @@ const Wrapper = styled.div<{
   offset: number;
 }>`
   will-change: opacity, transform;
-  padding: 8px 16px;
+  padding: 8px 8px;
   position: absolute;
   z-index: ${props => props.theme.zIndex + 100};
   opacity: 0;
@@ -194,7 +194,7 @@ const Wrapper = styled.div<{
     transform 150ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition-delay: 150ms;
   line-height: 0;
-  height: 40px;
+  height: 48px;
   box-sizing: border-box;
   pointer-events: none;
   white-space: nowrap;
