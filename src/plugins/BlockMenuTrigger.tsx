@@ -108,27 +108,27 @@ export default class BlockMenuTrigger extends Extension {
             const isTopLevel = state.selection.$from.depth === 1;
 
             if (isTopLevel) {
-              // if (isEmpty) {
-              //   decorations.push(
-              //     Decoration.widget(parent.pos, () => {
-              //       button.addEventListener("click", () => {
-              //         this.options.onOpen("");
-              //       });
-              //       return button;
-              //     })
-              //   );
+              if (isEmpty && !this.options.hideDropDownToolbar) {
+                decorations.push(
+                  Decoration.widget(parent.pos, () => {
+                    button.addEventListener("click", () => {
+                      this.options.onOpen("");
+                    });
+                    return button;
+                  })
+                );
 
-              //   decorations.push(
-              //     Decoration.node(
-              //       parent.pos,
-              //       parent.pos + parent.node.nodeSize,
-              //       {
-              //         class: "placeholder",
-              //         "data-empty-text": this.options.dictionary.newLineEmpty,
-              //       }
-              //     )
-              //   );
-              // }
+                decorations.push(
+                  Decoration.node(
+                    parent.pos,
+                    parent.pos + parent.node.nodeSize,
+                    {
+                      class: "placeholder",
+                      "data-empty-text": this.options.dictionary.newLineEmpty,
+                    }
+                  )
+                );
+              }
 
               if (isSlash) {
                 decorations.push(

@@ -11,6 +11,7 @@ export default {
     value: { control: "text" },
     readOnly: { control: "boolean" },
     showToolbar: { control: "boolean" },
+    hideDropDownToolbar: { control: "boolean" },
     onSave: { action: "save" },
     onCancel: { action: "cancel" },
     onClickHashtag: { action: "hashtag clicked" },
@@ -30,6 +31,7 @@ const Template: Story<Props> = args => <Editor {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
+  hideDropDownToolbar: false,
   defaultValue: `# Welcome
 
 Just an easy to use **Markdown** editor with \`slash commands\``,

@@ -131,6 +131,7 @@ export const StyledEditor = styled("div") <{
     margin: 0;
     cursor: text;
     font-family: ${props => props.theme.fontFamilyHeading};
+    color: ${props => props.theme.colorHeading};
 
     &:not(.placeholder):before {
       display: ${props => (props.readOnly ? "none" : "inline-block")};

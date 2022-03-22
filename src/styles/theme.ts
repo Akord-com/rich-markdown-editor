@@ -92,6 +92,8 @@ export const light = {
 
   scrollbarBackground: colors.greyLight,
   scrollbarThumb: colors.greyMid,
+
+  colorHeading: colors.almostBlack,
 };
 
 export const dark = {
@@ -121,6 +123,8 @@ export const dark = {
 
   scrollbarBackground: colors.black,
   scrollbarThumb: colors.lightBlack,
+
+  colorHeading: colors.almostWhite,
 };
 
 export default light;

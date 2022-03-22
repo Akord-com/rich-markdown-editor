@@ -123,6 +123,7 @@ export type Props = {
   autoFocus?: boolean;
   readOnly?: boolean;
   showToolbar?: boolean;
+  hideDropDownToolbar?: boolean;
   readOnlyWriteCheckboxes?: boolean;
   dictionary?: Partial<typeof baseDictionary>;
   dark?: boolean;
@@ -386,6 +387,7 @@ class RichMarkdownEditor extends React.PureComponent<Props, State> {
           }),
           new BlockMenuTrigger({
             dictionary,
+            hideDropDownToolbar: this.props.hideDropDownToolbar === true,
             onOpen: this.handleOpenBlockMenu,
             onClose: this.handleCloseBlockMenu,
           }),
