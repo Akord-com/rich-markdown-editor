@@ -2,6 +2,7 @@ import {
   AkordBoldIcon,
   AkordHeading1Icon,
   AkordHeading2Icon,
+  AkordHeading3Icon,
   AkordBulletListIcon,
   AkordNumberedListIcon,
   CodeIcon,
@@ -85,6 +86,14 @@ export default function formattingMenuItems(
       icon: AkordHeading2Icon,
       active: isNodeActive(schema.nodes.heading, { level: 2 }),
       attrs: { level: 2 },
+      visible: allowBlocks
+    },
+    {
+      name: 'heading',
+      tooltip: dictionary.subheading,
+      icon: AkordHeading3Icon,
+      active: isNodeActive(schema.nodes.heading, { level: 3 }),
+      attrs: { level: 3 },
       visible: allowBlocks
     },
     {

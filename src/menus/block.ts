@@ -1,6 +1,7 @@
 import {
   AkordHeading1Icon,
   AkordHeading2Icon,
+  AkordHeading3Icon,
   AkordBulletListIcon,
   AkordNumberedListIcon,
   BlockQuoteIcon,
@@ -51,7 +52,7 @@ export default function blockMenuItems(
       name: "heading",
       title: dictionary.h3,
       keywords: "h3 heading3",
-      icon: Heading3Icon,
+      icon: AkordHeading3Icon,
       shortcut: "^ ⇧ 3",
       attrs: { level: 3 },
     },

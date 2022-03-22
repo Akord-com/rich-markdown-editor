@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@akord/outline-icons@^1.40.0":
-  version "1.40.0"
-  resolved "https://registry.yarnpkg.com/@akord/outline-icons/-/outline-icons-1.40.0.tgz#c685328cecc7a957530d4607b4d3d5796d9885ac"
-  integrity sha512-uG2B8f/SBE+EBl8VTP0NAE34ObSCJl5WUMjjpJaSu/2238XURbkZn4Xhknr50S9jO8FjboaRbHF0KpvVku9z4w==
+"@akord/outline-icons@^1.40.1":
+  version "1.40.1"
+  resolved "https://registry.yarnpkg.com/@akord/outline-icons/-/outline-icons-1.40.1.tgz#fc03f80c0e7ff55e42c15fbd7036976f0d73e0cc"
+  integrity sha512-3PLpcMVs/SeDJW1ygiryg4bc9FhLmxoQUVuHTGq+pn5ePGKSHiJ8d0DX7VaEo3O6+wpEhGTF44YWSK1KJc5LNw==
 
 "@babel/code-frame@7.10.4":
   version "7.10.4"
