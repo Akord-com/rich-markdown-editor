@@ -737,6 +737,7 @@ class RichMarkdownEditor extends React.PureComponent<Props, State> {
       dir,
       readOnly,
       showToolbar = true,
+      hideDropDownToolbar = false,
       readOnlyWriteCheckboxes,
       style,
       tooltip,
@@ -767,19 +768,21 @@ class RichMarkdownEditor extends React.PureComponent<Props, State> {
             />
             {!readOnly && this.view && (
               <React.Fragment>
-                {showToolbar && <SelectionToolbar
-                  view={this.view}
-                  dictionary={dictionary}
-                  commands={this.commands}
-                  rtl={isRTL}
-                  isTemplate={this.props.template === true}
+                {showToolbar &&
+                  <SelectionToolbar
+                    view={this.view}
+                    dictionary={dictionary}
+                    commands={this.commands}
+                    rtl={isRTL}
+                    isTemplate={this.props.template === true}
                     onOpen={this.handleOpenSelectionMenu}
-                  onClose={this.handleCloseSelectionMenu}
-                  onSearchLink={this.props.onSearchLink}
-                  onClickLink={this.props.onClickLink}
-                  onCreateLink={this.props.onCreateLink}
-                  tooltip={tooltip}
-                />}
+                    onClose={this.handleCloseSelectionMenu}
+                    onSearchLink={this.props.onSearchLink}
+                    onClickLink={this.props.onClickLink}
+                    onCreateLink={this.props.onCreateLink}
+                    tooltip={tooltip}
+                  />
+                }
                 <LinkToolbar
                   view={this.view}
                   dictionary={dictionary}
@@ -800,21 +803,23 @@ class RichMarkdownEditor extends React.PureComponent<Props, State> {
                   search={this.state.blockMenuSearch}
                   onClose={() => this.setState({ emojiMenuOpen: false })}
                 />
-                <BlockMenu
-                  view={this.view}
-                  commands={this.commands}
-                  dictionary={dictionary}
-                  rtl={isRTL}
-                  isActive={this.state.blockMenuOpen}
-                  search={this.state.blockMenuSearch}
-                  onClose={this.handleCloseBlockMenu}
-                  uploadImage={this.props.uploadImage}
-                  onLinkToolbarOpen={this.handleOpenLinkMenu}
-                  onImageUploadStart={this.props.onImageUploadStart}
-                  onImageUploadStop={this.props.onImageUploadStop}
-                  onShowToast={this.props.onShowToast}
-                  embeds={this.props.embeds}
-                />
+                {!hideDropDownToolbar && 
+                  <BlockMenu
+                    view={this.view}
+                    commands={this.commands}
+                    dictionary={dictionary}
+                    rtl={isRTL}
+                    isActive={this.state.blockMenuOpen}
+                    search={this.state.blockMenuSearch}
+                    onClose={this.handleCloseBlockMenu}
+                    uploadImage={this.props.uploadImage}
+                    onLinkToolbarOpen={this.handleOpenLinkMenu}
+                    onImageUploadStart={this.props.onImageUploadStart}
+                    onImageUploadStop={this.props.onImageUploadStop}
+                    onShowToast={this.props.onShowToast}
+                    embeds={this.props.embeds}
+                  />
+                }
               </React.Fragment>
             )}
           </React.Fragment>

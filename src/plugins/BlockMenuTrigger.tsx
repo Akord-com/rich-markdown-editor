@@ -43,10 +43,14 @@ export default class BlockMenuTrigger extends Extension {
   }
 
   get plugins() {
+    const p = document.createElement("p");
     const button = document.createElement("button");
     button.className = "block-menu-trigger";
     button.type = "button";
-    ReactDOM.render(<PlusIcon color="currentColor" />, button);
+
+    !this.options.hideDropDownToolbar
+      ? ReactDOM.render(<PlusIcon color="currentColor" />, button)
+      : ReactDOM.render(<span />, p);
 
     return [
       new Plugin({
@@ -108,7 +112,7 @@ export default class BlockMenuTrigger extends Extension {
             const isTopLevel = state.selection.$from.depth === 1;
 
             if (isTopLevel) {
-              if (isEmpty && !this.options.hideDropDownToolbar) {
+              if (isEmpty) {
                 decorations.push(
                   Decoration.widget(parent.pos, () => {
                     button.addEventListener("click", () => {
@@ -130,7 +134,7 @@ export default class BlockMenuTrigger extends Extension {
                 );
               }
 
-              if (isSlash) {
+              if (isSlash && !this.options.hideDropDownToolbar) {
                 decorations.push(
                   Decoration.node(
                     parent.pos,
