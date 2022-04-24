@@ -5,7 +5,7 @@ import {
   AlignCenterIcon,
   InsertLeftIcon,
   InsertRightIcon,
-} from "@akord/outline-icons";
+} from "@akord/addon-icons";
 import { EditorState } from "prosemirror-state";
 import isNodeActive from "../queries/isNodeActive";
 import { MenuItem } from "../types";

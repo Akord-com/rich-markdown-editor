@@ -1,4 +1,4 @@
-import { TrashIcon } from "@akord/outline-icons";
+import { TrashIcon } from "@akord/addon-icons";
 import { MenuItem } from "../types";
 import baseDictionary from "../dictionary";
 

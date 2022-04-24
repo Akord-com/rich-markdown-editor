@@ -8,7 +8,7 @@ import {
   PlusIcon,
   TrashIcon,
   OpenIcon,
-} from "@akord/outline-icons";
+} from "@akord/addon-icons";
 import styled, { withTheme } from "styled-components";
 import isUrl from "../lib/isUrl";
 import theme from "../styles/theme";
@@ -312,15 +312,15 @@ class LinkEditor extends React.Component<Props, State> {
 
         <ToolbarButton onClick={this.handleOpenLink} disabled={!value}>
           <Tooltip tooltip={dictionary.openLink} placement="top">
-            <OpenIcon color={theme.toolbarItem} />
+            <OpenIcon htmlColor={theme.toolbarItem} isNotMui/>
           </Tooltip>
         </ToolbarButton>
         <ToolbarButton onClick={this.handleRemoveLink}>
           <Tooltip tooltip={dictionary.removeLink} placement="top">
             {this.initialValue ? (
-              <TrashIcon color={theme.toolbarItem} />
+              <TrashIcon htmlColor={theme.toolbarItem} isNotMui/>
             ) : (
-              <CloseIcon color={theme.toolbarItem} />
+              <CloseIcon htmlColor={theme.toolbarItem} isNotMui/>
             )}
           </Tooltip>
         </ToolbarButton>
@@ -332,7 +332,7 @@ class LinkEditor extends React.Component<Props, State> {
                 key={result.url}
                 title={result.title}
                 subtitle={result.subtitle}
-                icon={<DocumentIcon color={theme.toolbarItem} />}
+                icon={<DocumentIcon htmlColor={theme.toolbarItem} isNotMui/>}
                 onMouseOver={() => this.handleFocusLink(index)}
                 onClick={this.handleSelectLink(result.url, result.title)}
                 selected={index === selectedIndex}
@@ -344,7 +344,7 @@ class LinkEditor extends React.Component<Props, State> {
                 key="create"
                 title={suggestedLinkTitle}
                 subtitle={dictionary.createNewDoc}
-                icon={<PlusIcon color={theme.toolbarItem} />}
+                icon={<PlusIcon htmlColor={theme.toolbarItem} isNotMui/>}
                 onMouseOver={() => this.handleFocusLink(results.length)}
                 onClick={() => {
                   this.handleCreateLink(suggestedLinkTitle);

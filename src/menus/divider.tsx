@@ -1,5 +1,5 @@
 import { EditorState } from "prosemirror-state";
-import { PageBreakIcon, HorizontalRuleIcon } from "@akord/outline-icons";
+import { PageBreakIcon, HorizontalRuleIcon } from "@akord/addon-icons";
 import isNodeActive from "../queries/isNodeActive";
 import { MenuItem } from "../types";
 import baseDictionary from "../dictionary";

@@ -46,7 +46,7 @@ class ToolbarMenu extends React.Component<Props> {
               toolbarHoverBackground={this.props.theme.toolbarHoverBackground}
             >
               <Tooltip tooltip={item.tooltip} placement="top">
-                <Icon color={this.props.theme.toolbarItem}/>
+                <Icon htmlColor={this.props.theme.toolbarItem} isNotMui/>
               </Tooltip>
             </ToolbarButton>
           );

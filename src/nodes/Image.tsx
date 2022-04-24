@@ -1,5 +1,5 @@
 import * as React from "react";
-import { DownloadIcon } from "@akord/outline-icons";
+import { DownloadIcon } from "@akord/addon-icons";
 import { Plugin, TextSelection, NodeSelection } from "prosemirror-state";
 import { InputRule } from "prosemirror-inputrules";
 import styled from "styled-components";
@@ -261,8 +261,9 @@ export default class Image extends Node {
         >
           <Button>
             <DownloadIcon
-              color="currentColor"
+              htmlColor="currentColor"
               onClick={this.handleDownload(props)}
+              isNotMui
             />
           </Button>
           <ImageZoom

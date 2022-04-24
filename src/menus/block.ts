@@ -1,17 +1,14 @@
 import {
-  AkordHeading1Icon,
-  AkordHeading2Icon,
-  AkordHeading3Icon,
-  AkordBulletListIcon,
-  AkordNumberedListIcon,
+  BulletListIcon,
+  NumberedListIcon,
   BlockQuoteIcon,
-  BulletedListIcon,
+  // BulletedListIcon,
   CodeIcon,
   Heading1Icon,
   Heading2Icon,
   Heading3Icon,
   HorizontalRuleIcon,
-  OrderedListIcon,
+  // OrderedListIcon,
   PageBreakIcon,
   TableIcon,
   TodoListIcon,
@@ -20,7 +17,7 @@ import {
   WarningIcon,
   InfoIcon,
   LinkIcon,
-} from "@akord/outline-icons";
+} from "@akord/addon-icons";
 import { MenuItem } from "../types";
 import baseDictionary from "../dictionary";
 
@@ -36,7 +33,7 @@ export default function blockMenuItems(
       name: "heading",
       title: dictionary.h1,
       keywords: "h1 heading1 title",
-      icon: AkordHeading1Icon,
+      icon: Heading1Icon,
       shortcut: "^ ⇧ 1",
       attrs: { level: 1 },
     },
@@ -44,7 +41,7 @@ export default function blockMenuItems(
       name: "heading",
       title: dictionary.h2,
       keywords: "h2 heading2",
-      icon: AkordHeading2Icon,
+      icon: Heading2Icon,
       shortcut: "^ ⇧ 2",
       attrs: { level: 2 },
     },
@@ -52,7 +49,7 @@ export default function blockMenuItems(
       name: "heading",
       title: dictionary.h3,
       keywords: "h3 heading3",
-      icon: AkordHeading3Icon,
+      icon: Heading3Icon,
       shortcut: "^ ⇧ 3",
       attrs: { level: 3 },
     },
@@ -69,13 +66,13 @@ export default function blockMenuItems(
     {
       name: "bullet_list",
       title: dictionary.bulletList,
-      icon: AkordBulletListIcon,
+      icon: BulletListIcon,
       shortcut: "^ ⇧ 8",
     },
     {
       name: "ordered_list",
       title: dictionary.orderedList,
-      icon: AkordNumberedListIcon,
+      icon: NumberedListIcon,
       shortcut: "^ ⇧ 9",
     },
     {

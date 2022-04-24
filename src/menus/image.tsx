@@ -5,7 +5,7 @@ import {
   AlignImageLeftIcon,
   AlignImageRightIcon,
   AlignImageCenterIcon,
-} from "@akord/outline-icons";
+} from "@akord/addon-icons";
 import isNodeActive from "../queries/isNodeActive";
 import { MenuItem } from "../types";
 import baseDictionary from "../dictionary";

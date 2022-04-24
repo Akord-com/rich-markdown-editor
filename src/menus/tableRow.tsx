@@ -1,5 +1,5 @@
 import { EditorState } from "prosemirror-state";
-import { TrashIcon, InsertAboveIcon, InsertBelowIcon } from "@akord/outline-icons";
+import { TrashIcon, InsertAboveIcon, InsertBelowIcon } from "@akord/addon-icons";
 import { MenuItem } from "../types";
 import baseDictionary from "../dictionary";
 

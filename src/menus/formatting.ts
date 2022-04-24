@@ -1,10 +1,10 @@
 import {
-  AkordBoldIcon,
-  AkordHeading1Icon,
-  AkordHeading2Icon,
-  AkordHeading3Icon,
-  AkordBulletListIcon,
-  AkordNumberedListIcon,
+  BoldIcon,
+  Heading1Icon,
+  Heading2Icon,
+  Heading3Icon,
+  BulletListIcon,
+  NumberedListIcon,
   CodeIcon,
   BlockQuoteIcon,
   LinkIcon,
@@ -12,7 +12,7 @@ import {
   TodoListIcon,
   InputIcon,
   HighlightIcon
-} from '@akord/outline-icons'
+} from '@akord/addon-icons'
 import { isInTable } from 'prosemirror-tables'
 import { EditorState } from 'prosemirror-state'
 import isInList from '../queries/isInList'
@@ -46,7 +46,7 @@ export default function formattingMenuItems(
     {
       name: 'strong',
       tooltip: dictionary.strong,
-      icon: AkordBoldIcon,
+      icon: BoldIcon,
       active: isMarkActive(schema.marks.strong)
     },
     {
@@ -75,7 +75,7 @@ export default function formattingMenuItems(
     {
       name: 'heading',
       tooltip: dictionary.heading,
-      icon: AkordHeading1Icon,
+      icon: Heading1Icon,
       active: isNodeActive(schema.nodes.heading, { level: 1 }),
       attrs: { level: 1 },
       visible: allowBlocks
@@ -83,7 +83,7 @@ export default function formattingMenuItems(
     {
       name: 'heading',
       tooltip: dictionary.subheading,
-      icon: AkordHeading2Icon,
+      icon: Heading2Icon,
       active: isNodeActive(schema.nodes.heading, { level: 2 }),
       attrs: { level: 2 },
       visible: allowBlocks
@@ -91,7 +91,7 @@ export default function formattingMenuItems(
     {
       name: 'heading',
       tooltip: dictionary.subheading,
-      icon: AkordHeading3Icon,
+      icon: Heading3Icon,
       active: isNodeActive(schema.nodes.heading, { level: 3 }),
       attrs: { level: 3 },
       visible: allowBlocks
@@ -119,14 +119,14 @@ export default function formattingMenuItems(
     {
       name: 'bullet_list',
       tooltip: dictionary.bulletList,
-      icon: AkordBulletListIcon,
+      icon: BulletListIcon,
       active: isNodeActive(schema.nodes.bullet_list),
       visible: allowBlocks || isList
     },
     {
       name: 'ordered_list',
       tooltip: dictionary.orderedList,
-      icon: AkordNumberedListIcon,
+      icon: NumberedListIcon,
       active: isNodeActive(schema.nodes.ordered_list),
       visible: allowBlocks || isList
     },
