@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@akord/addon-icons@0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@akord/addon-icons/-/addon-icons-0.0.7.tgz#4d1d788b25d5d2a2fa3a94a614f9941441552209"
-  integrity sha512-R3naVnv137JM86MnCATRHQ8oFPCCB9b1QPpxWZX7oWNv6QUG0X9a/rglLF6vUJsg57jnAXjcUQCqV5Zk5MJiEw==
+"@akord/addon-icons@0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@akord/addon-icons/-/addon-icons-0.0.12.tgz#6ff99e8f7c52613bcf993dd5dabd3b1f01901cb9"
+  integrity sha512-CT1CEGR51vH0ZyufXH1OtaTLtgRzUnHGTA+qhc8D6Ocszj+pcjrhfnyWl617IeNLBRM4lZaA1Uf//9g2nWZyjQ==
   dependencies:
     "@emotion/react" "^11.9.0"
     "@emotion/styled" "^11.8.1"
