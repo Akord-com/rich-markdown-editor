@@ -1,7 +1,7 @@
 {
   "name": "@akord/rich-markdown-editor",
   "description": "A rich text editor with Markdown shortcuts using Akord Icons",
-  "version": "11.23.9",
+  "version": "11.24.0",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "license": "BSD-3-Clause",
@@ -24,7 +24,7 @@
     ]
   },
   "dependencies": {
-    "@akord/addon-icons": "0.0.12",
+    "@akord/addon-icons": "0.0.13",
     "copy-to-clipboard": "^3.0.8",
     "fuzzy-search": "^3.2.1",
     "gemoji": "6.x",
