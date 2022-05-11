@@ -1,7 +1,7 @@
 {
   "name": "@akord/rich-markdown-editor",
   "description": "A rich text editor with Markdown shortcuts using Akord Icons",
-  "version": "11.24.0",
+  "version": "11.24.1",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "license": "BSD-3-Clause",
@@ -24,7 +24,7 @@
     ]
   },
   "dependencies": {
-    "@akord/addon-icons": "0.0.13",
+    "@akord/addon-icons": "*",
     "copy-to-clipboard": "^3.0.8",
     "fuzzy-search": "^3.2.1",
     "gemoji": "6.x",
@@ -77,11 +77,11 @@
     "@types/prosemirror-history": "^1.0.1",
     "@types/prosemirror-inputrules": "^1.0.2",
     "@types/prosemirror-keymap": "^1.0.1",
-    "@types/prosemirror-markdown": "1.0.3",
+    "@types/prosemirror-markdown": "1.5.5",
     "@types/prosemirror-model": "^1.7.2",
     "@types/prosemirror-schema-list": "^1.0.1",
     "@types/prosemirror-state": "^1.2.4",
-    "@types/prosemirror-view": "^1.11.4",
+    "@types/prosemirror-view": "1.23.1",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
     "@types/refractor": "^2.8.0",
