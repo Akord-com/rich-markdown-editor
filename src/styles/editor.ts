@@ -24,6 +24,14 @@ export const StyledEditor = styled("div") <{
     font-feature-settings: "liga" 0; /* the above doesn't seem to work in Edge */
   }
 
+  .ProseMirror>*:nth-child(2) {
+    margin-top: 0 !important;
+  }
+
+  .ProseMirror>*:last-child {
+    margin-bottom: 0 !important;
+  }
+
   pre {
     white-space: pre-wrap;
   }
@@ -128,7 +136,8 @@ export const StyledEditor = styled("div") <{
   h4,
   h5,
   h6 {
-    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 16px;
     cursor: text;
     font-family: ${props => props.theme.fontFamilyHeading};
     color: ${props => props.theme.colorHeading};
@@ -151,6 +160,10 @@ export const StyledEditor = styled("div") <{
         opacity: 1;
       }
     }
+  }
+
+  h1 {
+    border-bottom: 1px solid ${props => props.theme.horizontalRule};
   }
 
   .heading-content {
@@ -397,7 +410,8 @@ export const StyledEditor = styled("div") <{
   }
 
   p {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 16px;
 
     span:first-child + br:last-child {
       display: none;
@@ -559,7 +573,7 @@ export const StyledEditor = styled("div") <{
   .code-block,
   .notice-block {
     position: relative;
-
+    margin-bottom: 16px;
     select,
     button {
       background: ${props => props.theme.blockToolbarBackground};
