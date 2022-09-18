@@ -407,10 +407,11 @@ export const StyledEditor = styled("div") <{
   a {
     color: ${props => props.theme.link};
     cursor: pointer;
+    text-decoration: none;
   }
 
   a:hover {
-    text-decoration: ${props => (props.readOnly ? "underline" : "none")};
+    text-decoration: ${props => (props.readOnly ? "none" : "none")};
   }
 
   ul,
