@@ -162,10 +162,6 @@ export const StyledEditor = styled("div") <{
     }
   }
 
-  h1 {
-    border-bottom: 1px solid ${props => props.theme.horizontalRule};
-  }
-
   .heading-content {
     &:before {
       content: "​";
