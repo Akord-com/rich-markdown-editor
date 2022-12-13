@@ -139,8 +139,8 @@ export const StyledEditor = styled("div") <{
     margin-top: 24px;
     margin-bottom: 16px;
     cursor: text;
-    font-family: ${props => props.theme.fontFamilyHeading};
     font-weight: 700
+    font-family: ${props => props.theme.fontFamilyHeading};
     color: ${props => props.theme.colorHeading};
 
     &:not(.placeholder):before {
